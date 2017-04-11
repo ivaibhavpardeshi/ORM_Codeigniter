@@ -1,16 +1,16 @@
 # ORM_Codeigniter
 
-#How to use ?
+# How to use ?
 1. Place My_Model.php in your codeigniters "root/application/core" folder
 2. Write any model and extend them with "My_Model" class
 3. And access the functions from model.
 
-NOTE : Use the setTable method of class to perform any operation on that table
+# NOTE : Use the setTable method of class to perform any operation on that table
 
-#Usage :
+# Usage :
 1. Setting table for performing query operation : 
-   $this->setTable("users");
-2. Fetch all record from the table : 
+   ' $this->setTable("users");
+2. ' Fetch all record from the table : 
    $object = $this->fetchAll();
 3. Fetch selected record by ID : 
    $object = $this->fetchById(2);
