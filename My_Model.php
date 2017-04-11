@@ -50,8 +50,8 @@ class MY_Model extends CI_Model
 		
 		if(!(isset($this->_table)))
 			return;
-		else
-			return TRUE;
+
+		return TRUE;
 	}
 
 	public function setTable($table)
@@ -67,6 +67,7 @@ class MY_Model extends CI_Model
 			return;
 
 		$this->_table = htmlspecialchars($table);	// Set the $_table propery
+		
 		return TRUE;
 	}
 
@@ -165,21 +166,21 @@ class MY_Model extends CI_Model
 
 		if(empty($data))
 			return;
-		
+
 		return $this->db->where($where)
 						->update($this->_table,$data);
 	}
 
 	/**
 	 * 	Delete related functions
-	 *  Success : TRUE
-	 *  FAILURE : FALSE
 	 */
 
 	public function delete($where)
 	{
 		/**
 		 * 	This function deletes particular row from table
+		 *  Success : TRUE
+		 *  FAILURE : FALSE
 		 */
 		
 		if(!($this->checkTableIsSet()))
