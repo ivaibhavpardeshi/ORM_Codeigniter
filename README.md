@@ -9,21 +9,21 @@
 
 ## Usage :
 1. Setting table for performing query operation : 
-    _$this->setTable("users");_
+    *_$this->setTable("users");_
 2. Fetch all record from the table : 
-    _$object = $this->fetchAll();_
+    *_$object = $this->fetchAll();_
 3. Fetch selected record by ID : 
-    _$object = $this->fetchById(2);_
+    *_$object = $this->fetchById(2);_
 4. Fetch selected record by specifying array : 
-    _$where = array('name'=>'Ram');_
-    _$object = $this->fetchByArray($where);_
+    *_$where = array('name'=>'Ram');_
+    *_$object = $this->fetchByArray($where);_
 5. Insert the record :
-    _$data = array('name'=>'Ram','contact'=>'1020304050');_
-    _$ret = $this->insert($data);_
+    *_$data = array('name'=>'Ram','contact'=>'1020304050');_
+    *_$ret = $this->insert($data);_
 6. Update the record :
-    _$where = array('id'=>$id);_
-    _$data = array('name'=>'Rama');_
+    *_$where = array('id'=>$id);_
+    *_$data = array('name'=>'Rama');_
     _$ret = $this->update($data,$where);_
 7. Delete the record :
-    _$where = array('id'=>$id);_
-    _$ret = $this->delete($where);_
+    *_$where = array('id'=>$id);_
+    *_$ret = $this->delete($where);_
