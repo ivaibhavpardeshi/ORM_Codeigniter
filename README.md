@@ -9,9 +9,9 @@
 
 ## Usage :
 1. Setting table for performing query operation : 
-    *_$this->setTable("users");_
+    * _$this->setTable("users");_
 2. Fetch all record from the table : 
-    *_$object = $this->fetchAll();_
+    * _$object = $this->fetchAll();_
 3. Fetch selected record by ID : 
     *_$object = $this->fetchById(2);_
 4. Fetch selected record by specifying array : 
